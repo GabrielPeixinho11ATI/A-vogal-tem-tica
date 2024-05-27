@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jogo de Quiz: Vogal Temática e Tema</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>Jogo de Quiz: Vogal Temática e Tema</h1>
+  <div id="questionContainer">
+    <h2 id="question">Pergunta</h2>
+    <ul id="options">
+      <li class="option" onclick="checkAnswer(0)"></li>
+      <li class="option" onclick="checkAnswer(1)"></li>
+      <li class="option" onclick="checkAnswer(2)"></li>
+      <li class="option" onclick="checkAnswer(3)"></li>
+    </ul>
+  </div>
+  <div id="score">Pontuação: <span id="scoreValue">0</span></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
