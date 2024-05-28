@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jogo de Quiz: Vogal Temática e Tema</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Educativo Mario</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-<div class="container">
-  <h1>Jogo de Quiz: Vogal Temática e Tema</h1>
-  <div id="questionContainer">
-    <h2 id="question">Pergunta</h2>
-    <ul id="options">
-      <li class="option" onclick="checkAnswer(0)"></li>
-      <li class="option" onclick="checkAnswer(1)"></li>
-      <li class="option" onclick="checkAnswer(2)"></li>
-      <li class="option" onclick="checkAnswer(3)"></li>
-    </ul>
-  </div>
-  <div id="score">Pontuação: <span id="scoreValue">0</span></div>
-</div>
-
-<script src="script.js"></script>
+    <div id="game-container">
+        <h1>Jogo Educativo Mario</h1>
+        <div id="life-container">
+            <img src="img/pixel-heart-pixelart-png.webp" alt="Life" class="life">
+            <img src="img/pixel-heart-pixelart-png.webp" alt="Life" class="life">
+            <img src="img/pixel-heart-pixelart-png.webp" alt="Life" class="life">
+        </div>
+        <div id="enemy-container">
+            <img src="img/Sem título.jpg" alt="Enemy" class="enemy" id="enemy1">
+            <img src="img/Sem título.jpg" alt="Enemy" class="enemy" id="enemy2">
+            <img src="img/Sem título.jpg" alt="Enemy" class="enemy" id="enemy3">
+            <img src="img/Sem título.jpg" alt="Enemy" class="enemy" id="enemy4">
+            <img src="img/4f6b06978e3c78fcb8b740ad33de2387.jpg" alt="Boss" class="enemy" id="boss">
+        </div>
+        <div id="question-container">
+            <p id="question">Qual a consoante de ligação na palavra <strong>desenvolvimento</strong>?</p>
+            <input type="text" id="answer" placeholder="Digite sua resposta">
+            <button onclick="checkAnswer()">Verificar</button>
+        </div>
+        <p id="feedback"></p>
+        <div id="mario-container">
+            <img src="img/mario.webp" alt="Mario" id="mario">
+        </div>
+        <button id="restart-button" onclick="restartGame()">Reiniciar Jogo</button>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
